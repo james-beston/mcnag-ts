@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Navigation from '../components/navigation'
 
 const Home: NextPage = () => {
   return (
@@ -9,6 +10,9 @@ const Home: NextPage = () => {
         <meta name="description" content="Marine Conservation for Norfolk Action Group website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <div className="sticky top-0 z-10">
+        <Navigation />
+      </div>
       <div className="flex h-full flex-col w-full bg-gradient-to-b from-mcnag-light-blue to-mcnag-dark-blue">
         <div className="flex items-center w-full h-full">
           <div className="absolute bottom-0 left-0 w-1/2">
