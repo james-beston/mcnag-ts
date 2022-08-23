@@ -5,7 +5,12 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'mcnag-dark-blue': '#2E3192',
+        'mcnag-light-blue': '#29ABE2',
+      },
+    },
   },
   plugins: [
     require('@tailwindcss/typography'),
